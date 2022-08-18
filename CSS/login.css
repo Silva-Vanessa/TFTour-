@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    background-color: black;
+}
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-grid img{
+    width: 250px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 20px;
+}
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content:space-between;
+}
+body{
+    background-color: black;
+}
+.login label{
+    font-family: 'Cantora One', sans-serif;
+    font-size: 20px;
+    color: blueviolet;
+}
+.login input{
+    height: 30px;
+    width: 300px;
+}
+.botao-entrar{
+    width: 200px;
+    background-color: blueviolet;
+    height: 30px;
+    border: none;
+    color: whitesmoke;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.login{
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+}
+.campo-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

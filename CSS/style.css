@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    background-color: black;
+}
+.container-grid{
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-grid img{
+    width: 250px;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 20px;
+}
+.menu{
+    width: 700px;
+    display: flex;
+    justify-content:space-between;
+}
+.secao-inscricao{
+    background-color: #191818;
+    height: 80px;
+}
+.texto-inscricao a{
+    background-color: whitesmoke;
+    color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 35px;
+}
+.texto-inscricao{
+    justify-content: center;
+    position: absolute;
+    height: 80px;
+    width: 1900px;
+}
+.sobre-torneio{
+    background-image: url(../Img/sobre\ torneios.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.texto-sobre h1{
+    color: white;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 50px;
+    line-height: 1.5;
+    flex-direction: column;
+}
+.texto-sobre p{
+    color: white;
+    font-family: 'Cantora One', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 60px;
+    font-weight: lighter;
+    width: 950px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    word-spacing: 5px;
+}
+.texto-sobre a{
+    color: #9F7C00;
+}
+.container-imagem{
+    justify-items: right;
+}
+.secao-partidas{
+    background-color: black;
+    
+}
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jogos img{
+    width: 100px;
+}
