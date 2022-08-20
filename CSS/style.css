@@ -12,13 +12,16 @@ header{
 }
 .container-grid{
     width: 1200px;
-    height: 80px;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container-grid img{
+.posicionamento-header{
+    position: relative;
+}
+.logo{
     width: 250px;
 }
 .menu a{
@@ -26,13 +29,19 @@ header{
     text-decoration: none;
     text-transform:capitalize;
     font-family: 'Cantora One', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 .menu{
     width: 700px;
     display: flex;
     justify-content:space-between;
 }
+.barras{
+    width: 35px;
+    display: none;
+    
+}
+
 .secao-inscricao{
     background-color: #191818;
     height: 80px;
@@ -94,4 +103,43 @@ header{
 }
 .jogos img{
     width: 100px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .container-grid{
+        width: 80%;
+    }
+    .barras{
+        display: inline-block;
+    
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        right: 65px;
+        top: 0;
+        background-color: #191818 ;
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+        font-size: 15px;
+    }
+    .logo{
+        width: 200px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+.barras{
+    display: inline-block;
+    }
+
+
 }
