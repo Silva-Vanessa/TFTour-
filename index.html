@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
 </head>
-<body>
+<body onload="renderizarNoticias()">
     <header>
         <div class="container-grid posicionamento-header">
             <a href="index.html"><img class="logo" src="img/logo.png "  alt="Logo"></a>
@@ -20,7 +20,8 @@
                 <a href="#">Colocações</a>
                 <a href="#">Notícias</a>
             </nav>
-            <a href="#" onclick="mostrarMenu()"><img class="barras" src="Img/bars-solid.png" alt="menu"></a>
+            <a href="#" id="barras"><img class="barras" src="Img/bars-solid.png" alt="menu"></a>
+            <!--<a href="#" onclick="mostrarMenu()"><img class="barras" src="Img/bars-solid.png" alt="menu"></a>-->
         </div>
     </header>
     <div class="carrossel">
@@ -59,31 +60,258 @@
   </div>
 </section>
   <section class="sobre-torneio">
-    <div class="conteudo-sobre container">
+    <div class="conteudo-sobre container-grid">
       <div class="row">
-        <div class="texto-sobre col-md-10">
+        <div class="texto-sobre col">
           <h1>Sobre os Torneios</h1>
-      <p> Os torneios são de elo único, porém, será permitido a participação de jogadores com até UM elo de diferença para CIMA/BAIXO dentro do mesmo time. Obrigatoriamente tem que haver um jogador do elo do torneio no time! Ou seja, cada time precisa ter PELO MENOS 1 jogador com o elo do torneio! Os outros 4 jogadores podem ser jogadores com 1 elo abaixo, com o elo do torneio ou com 1 elo acima - O importante é ter pelo menos 1 jogador com o elo do torneio, o resto não importa se são do elo do torneio ou um elo a mais/menos.<br>
-      EXEMPLOS DE ESCALAÇÕES PARA O TORNEIO OURO:<br>  EX1: 1 Prata, 3 Ouros e 1 Platina<br> EX2: 3 Pratas, 1 Ouro e 1 Platina<br> EX3: 1 Ouro e 4 Platina... 
-      <a href="">Leia mais</a></p>
-
+      <p> Os torneios são de elo único, porém, será permitido a participação de jogadores com até UM elo de diferença para CIMA/BAIXO dentro do mesmo time. Obrigatoriamente tem que haver um jogador do elo do torneio no time! Ou seja, cada time precisa ter PELO MENOS 1 jogador com o elo do torneio! Os outros 4 jogadores podem ser jogadores com 1 elo abaixo, com o elo do torneio ou com 1 elo acima - O importante é ter pelo menos 1 jogador com o elo do torneio, o resto não importa se são do elo do torneio ou um elo a mais/menos<b>.<br>EXEMPLOS DE ESCALAÇÕES PARA O TORNEIO OURO:<br>  EX1: 1 Prata, 3 Ouros e 1 Platina<br> EX2: 3 Pratas, 1 Ouro e 1 Platina<br> EX3: 1 Ouro e 4 Platina</b>...
+        <a href="">Leia mais</a></p>
         </div>
-      <div class="container-imagem col-md-2">
+      <div class="container-imagem col">
         <img src="Img/logo sobre.png" alt="imagem sobre">
       </div>
       </div>
     </div>
   </section>
   <section class="secao-partidas">
-    <div class="jogos container">
-      <a href="#"><img src="Img/Ao Vivo nome.png" alt="ao vivo"> </a>  
-      <a href="#"><img src="Img/ao-vivo.png" alt="jogo ao vivo"> </a>  
-      <a href="#"><img src="Img/Ainda hoje nome.png" alt="ainda hoje 1"> </a>  
-      <a href="#"><img src="Img/aindahoje 1.png" alt="jogo ainda hoje 1"> </a>  
-      <a href="#"><img src="Img/ainda hoje 2.png" alt="jogo ainda hoje 2"> </a>  
+    <div class="partidas container-grid">
+        <div class="games-aovivo">
+          <h2>Ao Vivo</h2>
+          <div class="partida">
+            <div class="time1">
+              <p>SGB</p>
+              <img src="Img/sgb.png" alt="SGB">
+            </div>
+            <p>X</p>
+            <div class="time2">
+              <img src="Img/kabum.png" alt="KBM">
+              <p>KBM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="games-embreve">
+          <h2>Ainda<br>Hoje</h2>
+          <div class="partida">
+            <div class="time1">
+              <p>INTZ</p>
+              <img src="Img/intz.png" alt="INTZ">
+            </div>
+            <p>X</p>
+            <div class="time2">
+              <img src="Img/rc.png" alt="RC">
+              <p>RC</p>
+            </div>
+          </div>
+
+          <div class="partida">
+            <div class="time1">
+              <p>AZE</p>
+              <img src="Img/aze.png" alt="AZE">
+            </div>
+            <p>X</p>
+            <div class="time2">
+              <img src="Img/eg.png" alt="EG">
+              <p>EG</p>
+            </div>
+          </div>
+          </div>
+      </div>
+  </section>
+  <section class="secao-noticias">
+    <div class="container-grid">
+      <div class="bloco-noticias">
+        <h2>Notícias</h2>
+        <div class="content-news">
+        <div id="espaco-vods" class="vods">
+          <h3 class="nomesub">Vods de partidas recentes</h3>
+        <div class="cardnews">
+          <img src="Img/noticias.png" alt="cardnew">
+          <h3>Título da Notícia</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div>
+        <div class="cardnews">
+          <img src="Img/noticias.png" alt="cardnew">
+          <h3>Título da Notícia</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div>
+        <div class="cardnews">
+          <img src="Img/noticias.png" alt="cardnew">
+          <h3>Título da Notícia</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div>
+      </div>
+      <div id="espaco-noticias" class="ultimas-noticias">
+        <h3 class="nomesub">Últimas Notícias</h3>
+      <div class="cardnews">
+        <img src="Img/noticias.png" alt="cardnew">
+        <h3>Título da Notícia</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div>
+      <div class="cardnews">
+        <img src="Img/noticias.png" alt="cardnew">
+        <h3>Título da Notícia</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div>
+      <div class="cardnews">
+        <img src="Img/noticias.png" alt="cardnew">
+        <h3>Título da Notícia</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+      </div>
+    </div>
+    </div>
+      </div>
+    <aside class="next-games">
+      <h2>Próximas Partidas</h2>
+      <div class="next-games-bg">
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+        <div class="next-games-match">
+          <div class="teams">
+            <div>
+              <p>KT</p>
+              <img src="Img/kt.png" alt="KT">
+            </div>
+            <p>X</p>
+            <div>
+              <p>LSB</p>
+              <img src="Img/lsb.png" alt="LSB">
+            </div>
+          </div>
+          <p>25/09/2022 18:00</p>
+        </div>
+      </div>
+    </aside>
     </div>
   </section>
+  <footer>
+    <div class="container-grid">
+      <div class="links ">
+        <h2>Links Úteis</h2>
+        <ul>
+            <li><a href="#">Regras</a></li>  
+            <li><a href="#">Aviso de Privacidade</a></li>  
+            <li><a href="#">Suporte</a></li>  
+            <li><a href="#">Termos</a></li>  
+            <li><a href="#">Contato</a></li>  
+        </ul>
+      </div>
+      <div class="redes-logo">
+      <div class="redes">
+        <h2>Rede Sociais</h2>
+        <a href="#"><img src="Img/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="Img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="Img/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="Img/twitch.png" alt="Twitch"></a>
+        <a href="#"><img src="Img/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="Img/discord.png" alt="Discord"></a>
+      </div>
+      <div>
+        <a href="#"><img class="logo-footer" src="Img/logo.png" alt="Logo TFTour"></a>
+      </div>
+      </div>
+      <div class="patro-new ">
+        <div class="patrocinadores">
+          <h2>Patrocinadores</h2>
+          <a href="#"><img src="Img/epic.png" alt="Epic"></a>
+          <a href="#"><img src="Img/logitech.png" alt="Logitech"></a>
+          <a href="#"><img src="Img/razer.png" alt="Razer"></a>
+          <a href="#"><img src="Img/riot.png" alt="Riot"></a>
+        </div>
+        <div class="newsletter">
+          <h2>Faça parte do nosso clã, assine nossa newsletter!</h2>
+          <form action="">
+            <input id="campo-email" type="email" placeholder="E-mail" required>
+            <button onclick="enviarEmail()" class="botao-cadastrar">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
