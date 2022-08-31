@@ -1,23 +1,13 @@
-$(document).ready(function(){
-    $("#barras").click(function(){
-        if($("menu").hasClass("menu-ativo")){
-            $("menu").removeClass("menu-ativo")
-        }else{
-            $("menu").addClass("menu-ativo")
-        }
-    })
 
-})
+// let menu = document.getElementById("menu");
+// function mostrarMenu() {
+//     if(menu.style.display != "flex") {
+//         menu.style.display = "flex"
+//     }else{
+//         menu.style.display = "none"
+//     } 
+// }
 
-/*let menu = document.getElementById("menu");
-
-function mostrarMenu() {
-    if(menu.style.display != "flex") {
-        menu.style.display = "flex"
-    }else{
-        menu.style.display = "none"
-    } 
-}*/
 
 
 let email = document.getElementById("campo-email");
@@ -49,7 +39,7 @@ function renderizarNoticias(){
     let template = "";
 
     for (let index = 0; index < listaNoticias.length; index++) {
-        const element = listaNoticias[index];
+        const noticia = listaNoticias[index];
 
         template += `<div class="cardnews">
         <img src="Img/noticias.png" alt="cardnew">
@@ -78,20 +68,30 @@ let listaVods = [
     
     ]
 
-function renderizarNoticias(){
-    let espacoV = document.getElementById("espaco-vods")
+function renderizarVods(){
+    let espaco = document.getElementById("espaco-vods")
 
     let template = "";
 
     for (let index = 0; index < listaVods.length; index++) {
-        const element = listaVods[index];
+        const vods = listaVods[index];
 
-        template += ` <div class="cardnews">
+        template += `<div class="cardnews">
         <img src="Img/noticias.png" alt="cardnew">
-        <h3>${noticia.titulo}</h3>
-        <p>${noticia.descricao}</p>
+        <h3>${vods.titulo}</h3>
+        <p>${vods.descricao}</p>
       </div>`
     }
-    espacoV.innerHTML = template;
+    espaco.innerHTML = template;
 }
+
+
+
+$(document).ready(function(){
+
+    $("#barras").click(function(){
+        $("#menu").toggle();
+      });
+
+})
 

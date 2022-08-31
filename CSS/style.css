@@ -37,12 +37,17 @@ header{
     width: 700px;
     display: flex;
     justify-content:space-between;
+    z-index : 99;
     
 }
 .barras{
     width: 35px;
     display: none;
     
+}
+
+#carrossel img{
+    display: none;
 }
 
 .secao-inscricao{
@@ -142,6 +147,8 @@ header{
     justify-content: space-between;
     width: 150px;
     align-items: center;
+    color: white;
+    
 }
 
 .partida p{
@@ -176,6 +183,7 @@ header{
     justify-content: space-between;
 }
 
+
 .bloco-noticias{
     width: 70%;
     height: 90%;
@@ -196,9 +204,8 @@ header{
     margin-top: 60px;
 }
 
-.vods, .ultimas-noticias{
-    display: flex;
-    flex-wrap: nowrap;
+.vods h2, .ultimas-noticias h2{
+    font-size: 18px;
 }
 
 .nomesub{
@@ -206,16 +213,16 @@ header{
     align-self: flex-start;
     position: absolute;
     margin-top: -40px;
-    font-size: 18px;
     text-transform: uppercase;
     font-family: 'Cantora One', sans-serif;
 }
 
 .cardnews{
+    display: inline-block;
     width: 215px;
     height: 340px;
     margin-bottom:80px;
-    margin-left: 40px;
+    margin-right: 50px;
     background: var(--gradient);
     box-shadow: 0px 0px 10px black, 0px 0px 30px black;
 }
@@ -227,7 +234,7 @@ header{
 
 .cardnews p{
     font-size: 15px;
-    padding-left: 16px;
+    padding-left: 20px;
 }
 
 .next-games{
@@ -306,12 +313,11 @@ footer h2{
 }
 
 .logo-footer{
-    width: 200px;   
+    width: 200px;
+    margin-top: 5px;  
 }
 
 .redes a{
-    
-    margin-top: 15px;
     display: inline-block;
 }
 .redes h2{
@@ -356,54 +362,98 @@ footer h2{
     .container-grid{
         width: 80%;
     }
+
     .barras{
         display: inline-block;
-    
     }
 
-    .menu-ativo{
-        display: flex;
+    #menu{
+        text-align: center;
     }
+
     .menu{
         display: none;
         flex-direction: column;
         width: 200px;
-        height: 250px;
+        height: 150px;
         position: absolute;
         right: 65px;
         top: 0;
         background-color: #191818 ;
     }
+
     .menu a{
-        text-align: center;
-        padding: 15px;
-        font-size: 15px;
+        padding: 35px;
+        font-size: 18px;
+        line-height: 2;
     }
+
+    .posicionamento-header{
+        position: relative;
+    }
+
     .logo{
         width: 200px;
     }
+
     .sobre-torneio{
         box-sizing: border-box;
     }
+
     .texto-sobre h1{
         font-size: 35px;
     }
+
     .texto-sobre p{
         font-size: 15px;
     }
+
     .texto-sobre b{
         display: none;
     }
+
     .texto-sobre{
         width: 70%;
         float: left;
     }
+
     .container-imagem img{
         width: 100%;
         float: right;
     }
 
+    .time-2{
+        display: none;
+    }
 
+    .games-aovivo{
+        width: 250px;
+    }
+    
+    .games-embreve{
+        width: 250px;
+    }
+    
+    .next-games{
+        display: none;
+    }
+
+    .bloco-noticias{
+        width: 100%;
+        height: 100%;
+    }
+
+    .links{
+        width: 150px;
+    }
+
+    .redes-logo{
+        width: 200px;
+    }
+
+    .patro-new{
+        width: 200px;
+    }
 
 }
 
@@ -415,5 +465,48 @@ footer h2{
     display: none;
 }
 
+.games-embreve{
+    display: none;
+}
+
+.games-aovivo{
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.ultimas-noticias{
+    display: none;
+}
+
+
+
+.footer-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes-logo{
+    align-items: center;
+}
+
+.newsletter h2{
+    text-align: center;
+}
+
+.patrocinadores a{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.patrocinadores h2{
+    text-align: center;
+}
+
+.links{
+    display: none;
+}
 
 }

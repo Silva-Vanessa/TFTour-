@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     
 </head>
-<body onload="renderizarNoticias()">
+<body onload="renderizarNoticias(), renderizarVods()">
     <header>
         <div class="container-grid posicionamento-header">
             <a href="index.html"><img class="logo" src="img/logo.png "  alt="Logo"></a>
@@ -20,10 +20,16 @@
                 <a href="#">Colocações</a>
                 <a href="#">Notícias</a>
             </nav>
-            <a href="#" id="barras"><img class="barras" src="Img/bars-solid.png" alt="menu"></a>
-            <!--<a href="#" onclick="mostrarMenu()"><img class="barras" src="Img/bars-solid.png" alt="menu"></a>-->
+            <a href="#" id="barras"><img class="barras" src="Img/bars-solid.png" alt="menu">
+            <!-- <a href="#" onclick="mostrarMenu()"><img class="barras" src="Img/bars-solid.png" alt="menu"> -->
         </div>
     </header>
+    <div id="carrossel" class="carrossel">
+      <img src="Img/banner1.png" alt="banner dupla">
+      <img src="Img/banner2.png" alt="banner solo">
+      <img src="Img/banner3.png" alt="banner ao vivo">
+
+    </div>
     <div class="carrossel">
       <div class="container-fluid p-0 m-0">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -56,7 +62,7 @@
   </div>
 <section class="secao-inscricao">
   <div class="texto-inscricao container-grid ">
-    <a href="#">Inscreva-se</a>
+    <a href="#" style="text-decoration:none">Inscreva-se</a>
   </div>
 </section>
   <section class="sobre-torneio">
@@ -65,7 +71,7 @@
         <div class="texto-sobre col">
           <h1>Sobre os Torneios</h1>
       <p> Os torneios são de elo único, porém, será permitido a participação de jogadores com até UM elo de diferença para CIMA/BAIXO dentro do mesmo time. Obrigatoriamente tem que haver um jogador do elo do torneio no time! Ou seja, cada time precisa ter PELO MENOS 1 jogador com o elo do torneio! Os outros 4 jogadores podem ser jogadores com 1 elo abaixo, com o elo do torneio ou com 1 elo acima - O importante é ter pelo menos 1 jogador com o elo do torneio, o resto não importa se são do elo do torneio ou um elo a mais/menos<b>.<br>EXEMPLOS DE ESCALAÇÕES PARA O TORNEIO OURO:<br>  EX1: 1 Prata, 3 Ouros e 1 Platina<br> EX2: 3 Pratas, 1 Ouro e 1 Platina<br> EX3: 1 Ouro e 4 Platina</b>...
-        <a href="">Leia mais</a></p>
+        <a href="" style="text-decoration:none">Leia mais</a></p>
         </div>
       <div class="container-imagem col">
         <img src="Img/logo sobre.png" alt="imagem sobre">
@@ -77,7 +83,7 @@
     <div class="partidas container-grid">
         <div class="games-aovivo">
           <h2>Ao Vivo</h2>
-          <div class="partida">
+          <a href="" style="text-decoration:none"><div class="partida">
             <div class="time1">
               <p>SGB</p>
               <img src="Img/sgb.png" alt="SGB">
@@ -87,12 +93,12 @@
               <img src="Img/kabum.png" alt="KBM">
               <p>KBM</p>
             </div>
-          </div>
+          </div></a>
         </div>
 
         <div class="games-embreve">
           <h2>Ainda<br>Hoje</h2>
-          <div class="partida">
+          <a href="" style="text-decoration:none"><div class="partida">
             <div class="time1">
               <p>INTZ</p>
               <img src="Img/intz.png" alt="INTZ">
@@ -102,9 +108,9 @@
               <img src="Img/rc.png" alt="RC">
               <p>RC</p>
             </div>
-          </div>
+          </div></a>
 
-          <div class="partida">
+          <a href="" style="text-decoration:none"><div class="partida time-2">
             <div class="time1">
               <p>AZE</p>
               <img src="Img/aze.png" alt="AZE">
@@ -114,7 +120,7 @@
               <img src="Img/eg.png" alt="EG">
               <p>EG</p>
             </div>
-          </div>
+          </div></a>
           </div>
       </div>
   </section>
@@ -123,9 +129,10 @@
       <div class="bloco-noticias">
         <h2>Notícias</h2>
         <div class="content-news">
-        <div id="espaco-vods" class="vods">
-          <h3 class="nomesub">Vods de partidas recentes</h3>
-        <div class="cardnews">
+        <div class="vods">
+          <h2 class="nomesub">Vods de partidas recentes</h2>
+        <div id="espaco-vods" >
+        <!-- <div class="cardnews">
           <img src="Img/noticias.png" alt="cardnew">
           <h3>Título da Notícia</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
@@ -139,13 +146,16 @@
           <img src="Img/noticias.png" alt="cardnew">
           <h3>Título da Notícia</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+        </div> -->
         </div>
-      </div>
-      <div id="espaco-noticias" class="ultimas-noticias">
-        <h3 class="nomesub">Últimas Notícias</h3>
-      <div class="cardnews">
+        </div>
+      <div class="ultimas-noticias">
+      <h2 class="nomesub">Últimas Notícias</h2>
+      <div id="espaco-noticias" >
+        <!-- <h2 class="nomesub">Últimas Notícias</h2> -->
+      <!-- <div class="cardnews">
         <img src="Img/noticias.png" alt="cardnew">
-        <h3>Título da Notícia</h3>
+        <h2>Título da Notícia</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
       </div>
       <div class="cardnews">
@@ -157,7 +167,8 @@
         <img src="Img/noticias.png" alt="cardnew">
         <h3>Título da Notícia</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-      </div>
+      </div> -->
+    </div>
     </div>
     </div>
       </div>
@@ -267,7 +278,7 @@
     </div>
   </section>
   <footer>
-    <div class="container-grid">
+    <div class="container-grid footer-mobile">
       <div class="links ">
         <h2>Links Úteis</h2>
         <ul>
